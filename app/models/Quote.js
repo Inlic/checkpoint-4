@@ -6,6 +6,8 @@ export default class Quote {
     this.hideauthor = hideauthor || true
   }
 
+
+  //TODO on hover effect possible with pure styling in css
   get Template(){
     return `
     <div class="card">
