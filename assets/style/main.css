@@ -10697,3 +10697,15 @@ main {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.hide{
+  display: none;
+}
+
+p:hover + .hide {
+  display: block;
+}
+
+.background-container{
+  height: 100vh;
+}

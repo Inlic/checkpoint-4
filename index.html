@@ -9,16 +9,21 @@
     <title>Inspire</title>
 </head>
 
-<body>
+<body onload="startTime()">
     <header class="container-fluid text-center bg-primary">
         <h1>INSPIRE</h1>
     </header>
-    <main class="container-fluid">
-        <div class="row text-center" id="splash-image">
+    <main class="container-fluid" id="splash-image">
+        <div class="row text-center">
             <div class="offset-10 col-2" id="weather">
                 Weather goes here</div>
             <div class="offset-4 col-4" id="clock">
-                Clock Goes here</div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1 id="clock-text"></h1>
+                    </div>
+                </div>
+            </div>
             <div class="offset-4 col-4" id="quote">
                 Quote Goes here</div>
             <div class="offset-2 col-2" id="todo">
@@ -34,6 +39,24 @@
     </footer>
 
 
+
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('clock-text').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
     <script src="app/main.js" type="module"></script>
 </body>
