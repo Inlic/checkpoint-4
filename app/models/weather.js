@@ -9,7 +9,7 @@ export default class Weather {
     this.kelvin = data.main.temp
     this.celsius = Math.floor(data.main.temp - 273.15)
     this.farenheit = Math.floor(data.main.temp * (9/5) - 459.67)
-    this.displayF = true
+    this.displayF = data.displayF || true
     this.iconURL = 'https://http.cat/404'
     if(data.weather && data.weather[0] && data.weather[0].icon){
       this.iconURL = 'http://openweathermap.org/img/wn/'+data.weather[0].icon+'@2x.png' 
