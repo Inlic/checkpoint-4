@@ -26,8 +26,21 @@
             </div>
             <div class="offset-4 col-4" id="quote">
                 Quote Goes here</div>
-            <div class="offset-2 col-2" id="todo">
-                Todo List here</div>
+            <div class="offset-2 col-2" >
+                <div class="card">
+                    <div class="card-header">
+                        Todo List
+                    </div>
+                    <div class="card-body text-left">
+                        <ul id="todos"> Todo List here</ul>
+                        <form onsubmit="app.todosController.addTodo(event)">
+                            <input class="form-control" id="newtodo" type="text" placeholder="New Todo...">
+                            <button class="form-control" type="submit">Submit</button>
+                            <button class="form-control" type="reset">Reset</button>
+                        </form>
+                    </div>
+                </div>
+               </div>
         </div>
     </main>
     <footer class="container-fluid bg-primary text-light">
@@ -38,6 +51,10 @@
         </div>
     </footer>
 
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="app/Utils/Clock.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
     <script src="app/main.js" type="module"></script>

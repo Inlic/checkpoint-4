@@ -8,7 +8,6 @@ import weatherService from "../Services/WeatherService.js";
 function drawWeather() {
   let template = ''
   //TODO remove this console log
-  console.log("THE WEATHER MAN SAYS:", ProxyState.weather);
   document.getElementById('weather').innerHTML = ProxyState.weather.Template
 }
 export default class WeatherController {

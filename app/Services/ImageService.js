@@ -7,8 +7,6 @@ class ImageService {
 
 async getImg(){
   let res = await api.get('images')
-  console.log("images service at your service")
-  console.log(res.data.url)
   ProxyState.splashimg = new Image(res.data.url)
 }
  }

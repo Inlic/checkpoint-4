@@ -10706,6 +10706,6 @@ p:hover + .hide {
   display: block;
 }
 
-.background-container{
-  height: 100vh;
+ul {
+  list-style: none;
 }

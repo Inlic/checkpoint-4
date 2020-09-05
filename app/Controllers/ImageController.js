@@ -6,7 +6,6 @@ import { ProxyState } from "../AppState.js";
 
 function _drawImg(){
   let img = ProxyState.splashimg.img
-  console.log(img)
   document.getElementById("splash-image").style.backgroundImage = `url(${img})`
   document.getElementById("splash-image").style.backgroundSize = "cover"
 }
