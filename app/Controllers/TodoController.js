@@ -33,6 +33,7 @@ export default class TodoController {
     } catch (error) {
       console.error(error)
     }
+    form.reset()
   }
 
   /**
@@ -52,6 +53,7 @@ export default class TodoController {
    * @param {string} todoId 
    */
   removeTodo(todoId) {
+    console.log(todoId)
     try {
       todoService.removeTodo(todoId);
     } catch (error) {

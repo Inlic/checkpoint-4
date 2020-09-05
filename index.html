@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="assets/style/main.css">
     <title>Inspire</title>
 </head>
@@ -30,10 +31,10 @@
                 <div class="card">
                     <div class="card-header">
                         Todo List
-                    </div>
+                    </div> 
                     <div class="card-body text-left">
                         <ul id="todos"> Todo List here</ul>
-                        <form onsubmit="app.todosController.addTodo(event)">
+                        <form onsubmit="app.todoController.addTodo(event)">
                             <input class="form-control" id="newtodo" type="text" placeholder="New Todo...">
                             <button class="form-control" type="submit">Submit</button>
                             <button class="form-control" type="reset">Reset</button>

@@ -10709,3 +10709,7 @@ p:hover + .hide {
 ul {
   list-style: none;
 }
+
+.fa{
+  color: red;
+}
