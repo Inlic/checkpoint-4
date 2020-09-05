@@ -10713,3 +10713,13 @@ ul {
 .fa{
   color: red;
 }
+
+.fa:hover{
+  cursor: pointer;
+}
+
+#clock{
+  position: absolute;
+  top: 35%;
+  text-align: center;
+}
