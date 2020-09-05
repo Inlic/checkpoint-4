@@ -7,7 +7,6 @@ import weatherService from "../Services/WeatherService.js";
 //TODO Complete rendering data to the screen
 function drawWeather() {
   let template = ''
-  //TODO remove this console log
   document.getElementById('weather').innerHTML = ProxyState.weather.Template
 }
 export default class WeatherController {
@@ -21,6 +20,13 @@ export default class WeatherController {
       weatherService.getWeather()
     }
     catch (e) {
+      console.error(e)
+    }
+  }
+  toggleTemp(){
+    try {
+      weatherService.toggleTemp()
+    } catch (e) {
       console.error(e)
     }
   }
