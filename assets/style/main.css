@@ -10714,7 +10714,7 @@ ul {
   color: red;
 }
 
-.fa:hover{
+.fa:hover, #weather{
   cursor: pointer;
 }
 
@@ -10722,4 +10722,10 @@ ul {
   position: absolute;
   top: 35%;
   text-align: center;
+}
+
+#clock-text{
+  font-size: 72pt;
+  text-shadow: 2px 2px #000;
+  cursor: pointer;
 }
