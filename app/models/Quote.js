@@ -11,7 +11,7 @@ export default class Quote {
     return `
     <div class="card">
       <div class="card-header">
-        Quote of the Day
+        <h5>Quote of the Day</h5>
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">

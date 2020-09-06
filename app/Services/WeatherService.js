@@ -5,10 +5,10 @@ import { api } from "./AxiosService.js";
 class WeatherService {
   //TODO Flesh out this method toggle for C and F
   toggleTemp() {
-    throw new Error("Method not implemented.");
+    ProxyState.weather.displayF ? ProxyState.weather.displayF = false : ProxyState.weather.displayF = true
+    ProxyState.weather = ProxyState.weather  
   }
   async getWeather() {
-    //TODO remove console log
     let res = await api.get('weather');
     ProxyState.weather = new Weather(res.data);
   }

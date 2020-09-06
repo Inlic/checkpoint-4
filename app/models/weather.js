@@ -20,8 +20,8 @@ export default class Weather {
   get Template(){
     return `
     <div class="card">
-      <div class="card-body">
-        Temperature in ${this.displayF ? "F: "+ this.farenheit : "C: "+ this.celsius} <img src='${this.iconURL}'>
+      <div class="card-body" onclick="app.weatherController.toggleTemp()">
+        <h5>Temperature in ${this.displayF ? "&degF: "+ this.farenheit : "&degC: "+ this.celsius}</h5> <img src='${this.iconURL}'>
       </div>
     </div>
     `
