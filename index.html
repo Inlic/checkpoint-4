@@ -10,7 +10,7 @@
     <title>Inspire</title>
 </head>
 
-<body onload="startTime()">
+<body onload="app.clockController.startTime()">
     <header class="container-fluid text-center bg-primary">
         <!-- <h1>INSPIRE</h1> -->
     </header>
@@ -19,7 +19,7 @@
             <div class="offset-10 col-2" id="weather">
 
             </div>
-            <div class="offset-4 col-4" id="clock">
+            <div class="offset-4 col-4" id="clock" onclick="app.clockController.toggleTime()">
                 <div class="card">
                     <div class="card-body">
                         <h1 id="clock-text">
@@ -62,7 +62,6 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="app/Utils/Clock.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
     <script src="app/main.js" type="module"></script>
 </body>

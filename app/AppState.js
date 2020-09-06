@@ -16,6 +16,8 @@ class AppState extends EventEmitter {
   splashimg = null
 
   quote = null
+
+  _24Hclock = true
 }
 
 export const ProxyState = new Proxy(new AppState(), {
