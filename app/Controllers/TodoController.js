@@ -7,6 +7,14 @@ function _drawTodos() {
   let todos = ProxyState.todos
   todos.forEach(t => template += t.Template)
   document.getElementById('todos').innerHTML = template
+  let taskCount = 0
+  for(let i = 0; i < ProxyState.todos.length; i++){
+    let todo = ProxyState.todos[i]
+    if(todo.completed == false){
+      taskCount+=1
+    }
+  }
+  document.getElementById('todo-count').innerHTML = "Things to do: "+taskCount
  }
 
 export default class TodoController {
