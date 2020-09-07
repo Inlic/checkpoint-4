@@ -11,19 +11,20 @@
 </head>
 
 <!-- github issue app not found -->
-<body onload="clockController.startTime()">
+<!-- <body onload="app.clockController.startTime()"> -->
+    <body>
     <header class="container-fluid text-center bg-primary">
         <!-- <h1>INSPIRE</h1> -->
     </header>
     <main class="container-fluid" id="splash-image">
         <div class="row h-100 text-center">
             <div class="col-2 text-left mt-3">
-                <button class="btn btn-success" onclick="window['app'].imageController.getImg()">Next BG Image</button>
+                <button class="btn btn-success" onclick="app.imageController.getImg()">Next BG Image</button>
             </div>
             <div class="offset-8 col-2" id="weather">
 
             </div>
-            <div class="offset-4 col-4" id="clock" onclick="window['app'].clockController.toggleTime()">
+            <div class="offset-4 col-4" id="clock" onclick="app.clockController.toggleTime()">
                 <div class="card border-0 bg-transparent">
                     <div class="card-body">
                         <h1 class="text-white" id="clock-text">
@@ -44,7 +45,7 @@
                         <ul id="todos">
 
                         </ul>
-                        <form onsubmit="window['app'].todoController.addTodo(event)">
+                        <form onsubmit="app.todoController.addTodo(event)">
                             <input class="form-control" id="newtodo" type="text" placeholder="New Todo...">
                             <button class="form-control btn btn-success" type="submit">Submit</button>
                             <button class="form-control btn btn-danger" type="reset">Reset</button>
