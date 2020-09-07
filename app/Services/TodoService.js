@@ -8,7 +8,6 @@ let url = 'ben/todos'
 
 class TodoService {
   async getTodos() {
-    console.log("Getting the Todo List");
     let res = await api.get(url);
     ProxyState.todos = res.data.data.map(t => new Todo(t))
     //TODO Handle this response from the server

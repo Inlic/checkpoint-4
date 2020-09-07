@@ -40,14 +40,11 @@ class ClockService {
 
   toggleTime() {
     clearTimeout(t)
-    console.log("hit toggle")
     if(ProxyState._24Hclock){
-      console.log("start 12 hour")
       // @ts-ignore
       app.clockController.startTimeTwelveHour()
       ProxyState._24Hclock = false
     } else{
-      console.log("start 24 hour")
       // @ts-ignore
       app.clockController.startTime()
       ProxyState._24Hclock = true
