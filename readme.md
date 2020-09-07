@@ -107,21 +107,21 @@ The todos portion of this project is the largest and will probably take the most
 - [X] The image should be on large display with at least one other element positioned over the top of the image.
 - [X] When adding a Todo the page does not reload
 - [X] Completed Todo's checkbox remains checked on reload ([hint: checked attribute](https://www.w3schools.com/tags/att_input_checked.asp))
-- [ ] A clock shows the accurate time in the middle of the screen and updates appropriately
+- [X] A clock shows the accurate time in the middle of the screen and updates appropriately
    
  ### Functionality
  - [X] Todo's can be added to a list (POST)
  - [X] Todo's can be removed (DELETE)
  - [X] Todo's can be marked complete (PUT)
- - [ ] The data in the Todos persists on reload
+ - [X] The data in the Todos persists on reload
 
 ### EXTENSION IDEAS 
-- On hover the quote should show the author of the quote and disappear when not hovered over
+-[X] On hover the quote should show the author of the quote and disappear when not hovered over
 - Allow the user to set their name and have it save to localStorage
 - Change the message from Good Morning to Good Afternoon, Evening as appropriate. 
-- Allow the user to toggle the clock from, 12hr to 24hr. 
-- Include an Icon to show what the weather is sunny/cloudy/rainy
-- Add a button to cycle to next quote/picture
+-[X] Allow the user to toggle the clock from, 12hr to 24hr. 
+-[X] Include an Icon to show what the weather is sunny/cloudy/rainy
+-[X] Add a button to cycle to next quote/picture
 - Add a settings so user can change to a new "theme" (font, background colors, etc.)
 - `BONUS DIFFICULTY` The todo list shouldn't have to redraw every item just because one of them changed. 
     - If you think through some of the actions being performed you might find a way to optimize the list by only updating the one todo that changes at a time

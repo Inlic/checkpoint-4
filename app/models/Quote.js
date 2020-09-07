@@ -5,8 +5,6 @@ export default class Quote {
     this.quoteauthor = author
   }
 
-
-  //TODO on hover effect possible with pure styling in css
   get Template(){
     return `
     <div class="card border-0 bg-transparent">

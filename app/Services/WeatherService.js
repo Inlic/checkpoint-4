@@ -3,7 +3,6 @@ import Weather from "../models/weather.js";
 import { api } from "./AxiosService.js";
 
 class WeatherService {
-  //TODO Flesh out this method toggle for C and F
   toggleTemp() {
     ProxyState.weather.displayF ? ProxyState.weather.displayF = false : ProxyState.weather.displayF = true
     ProxyState.weather = ProxyState.weather  

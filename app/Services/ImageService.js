@@ -1,4 +1,3 @@
-//TODO create methods to retrieve data and save to the State
 import Image from "../models/Image.js"
 import { api } from "./AxiosService.js";
 import { ProxyState } from "../AppState.js";
