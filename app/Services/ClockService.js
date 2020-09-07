@@ -6,6 +6,20 @@ function checkTime(i) {
   return i;
 }
 
+function greeting(h){
+  let greeting = ""
+      if(h >= 5 && h < 12){
+        greeting = "Morning"
+      } else if(h >= 12 && h < 17){
+        greeting = "Afternoon"
+      } else if(h >= 17){
+        greeting = "Evening"
+      } else {
+        greeting = "Night"
+      }
+  return greeting
+}
+
 let t
 
 class ClockService {
@@ -17,6 +31,7 @@ class ClockService {
     let s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
+    document.getElementById('greeting').innerHTML = `Good ${greeting(h)}`
     document.getElementById('clock-text').innerHTML =
     h + ":" + m + ":" + s;
     // @ts-ignore
@@ -26,6 +41,7 @@ class ClockService {
   startTimeTwelveHour(){
     let today = new Date();
       let h = today.getHours();
+      document.getElementById('greeting').innerHTML = `Good ${greeting(h)}`
       let meridiem = ""
       h > 12 ? meridiem = "PM" : meridiem = "AM"
       h > 12 ? h = h - 12 : h  

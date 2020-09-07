@@ -10725,6 +10725,14 @@ ul {
   text-align: center;
 }
 
+#greeting{
+  font-size: 60pt;
+  text-shadow: 2px 2px #000;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
+
 #clock-text{
   font-size: 72pt;
   text-shadow: 2px 2px #000;
