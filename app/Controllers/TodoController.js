@@ -14,7 +14,7 @@ function _drawTodos() {
       taskCount+=1
     }
   }
-  document.getElementById('todo-count').innerHTML = "Things to do: "+taskCount
+  document.getElementById('todo-count').innerHTML = "Things left to do: "+taskCount
  }
 
 export default class TodoController {

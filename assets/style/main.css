@@ -10708,6 +10708,7 @@ p:hover + .hide {
 
 ul {
   list-style: none;
+  padding-inline-start: 0;
 }
 
 .fa{
@@ -10728,4 +10729,8 @@ ul {
   font-size: 72pt;
   text-shadow: 2px 2px #000;
   cursor: pointer;
+}
+
+#quote{
+  text-shadow: 2px 2px #000;
 }

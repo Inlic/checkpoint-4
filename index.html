@@ -28,13 +28,13 @@
                     </div>
                 </div>
             </div>
-            <div class="offset-4 col-4 fixed-bottom" id="quote">
+            <div class="offset-4 col-4 fixed-bottom text-white" id="quote">
 
             </div>
             <div class="offset-10 col-2 fixed-bottom" >
                 <div class="card">
-                    <div class="card-header">
-                        <h5>Todo List</h5><span id="todo-count">Todo Count Goes Here</span>
+                    <div class="card-header bg-primary text-white">
+                        <h4>Todo List</h4><span id="todo-count"></span>
                     </div>
                     <div class="card-body text-left">
                         <ul id="todos">
@@ -42,8 +42,8 @@
                         </ul>
                         <form onsubmit="app.todoController.addTodo(event)">
                             <input class="form-control" id="newtodo" type="text" placeholder="New Todo...">
-                            <button class="form-control" type="submit">Submit</button>
-                            <button class="form-control" type="reset">Reset</button>
+                            <button class="form-control btn btn-success" type="submit">Submit</button>
+                            <button class="form-control btn btn-danger" type="reset">Reset</button>
                         </form>
                     </div>
                 </div>
