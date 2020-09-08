@@ -13,7 +13,7 @@ export default class Quote {
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p class="quotebody">${this.quotebody}</p>
+          <p class="quotebody h-50">${this.quotebody}</p>
           <footer class="blockquote-footer text-white hide">${this.quoteauthor}</footer>
         </blockquote>
       </div>
